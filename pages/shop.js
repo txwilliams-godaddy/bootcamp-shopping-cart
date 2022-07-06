@@ -3,7 +3,7 @@ import React from 'react';
 import Head from '../components/head';
 import Link from 'next/link';
 
-import ShoppingGrid from '../components/ShoppingGrid';
+import ShopItemList from '../components/ShopItemList';
 import { Container, Typography } from '@material-ui/core'
 
 export const ShopPage = () => (
@@ -17,7 +17,7 @@ export const ShopPage = () => (
         <a>View cart</a>
       </Link>
     </div>
-    <ShoppingGrid />
+    <ShopItemList />
   </Container>
 );
 

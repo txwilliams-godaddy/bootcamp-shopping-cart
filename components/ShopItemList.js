@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Grid } from '@material-ui/core'
-import ShoppingCard from './ShoppingCard';
+import ShopItem from './ShopItem';
 import { useRouter } from 'next/router'
 
 /*
@@ -26,7 +26,7 @@ import { useRouter } from 'next/router'
 }
 */
 
-function ShoppingGrid() {
+function ShopItemList() {
   const getProductsUrl = "http://localhost:8000/v1/products";
   const addToCartUrl = "http://localhost:8000/v1/cartitems";
   const [products, setProducts] = useState([]);
@@ -48,7 +48,7 @@ function ShoppingGrid() {
     <Grid container direction="row" spacing={1}>
       {products.map(product =>
         <Grid item xs>
-          <ShoppingCard 
+          <ShopItem 
             key={product.id}
             product_id={product.id}
             name={product.name}
@@ -66,4 +66,4 @@ function ShoppingGrid() {
 }
 
 
-export default ShoppingGrid
+export default ShopItemList

@@ -11,7 +11,7 @@ const images = [
   "https://img1.wsimg.com/cdn/Image/All/FOS-Intl/1/en-US/3b91b99f-57eb-44bd-b2e1-1cfd6529bbfb/feat-ols-your-store-your-way.jpg?impolicy=cms-feature-module"
 ]
 
-function ShoppingCard({ product_id, name, description, image_url, price, is_on_sale, sale_price, onAddToCart }) {
+function ShopItem({ product_id, name, description, image_url, price, is_on_sale, sale_price, onAddToCart }) {
   
   const addToCart = () => {
     onAddToCart({ product_id, name, price, quantity: 1 })
@@ -36,4 +36,4 @@ function ShoppingCard({ product_id, name, description, image_url, price, is_on_s
   );
 }
 
-export default ShoppingCard;
+export default ShopItem;
