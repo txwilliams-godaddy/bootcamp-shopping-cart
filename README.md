@@ -62,7 +62,7 @@ Created and open-sourced at GoDaddy, Gasket lets us create standard templates fo
 
 To use Gasket, we would normally to install it into our project via NPM (Node Package Manager) via [these instructions](https://github.com/godaddy/gasket/blob/master/docs/quick-start.md). However, this repo already comes with gasket installed so no need to worry!
 
-And speaking of libraries, let's install one called [Material UI](https://material-ui.com/). This is a Google-inspired opensource library that contains some basic react components we'll use to make our web app pretty. We'll go more in-depth into Material UI a little later on. For now though, let's just run this command:
+And speaking of libraries, let's install one called [Material UI](https://v5.mui.com/material-ui/). This is a Google-inspired opensource library that contains some basic react components we'll use to make our web app pretty. We'll go more in-depth into Material UI a little later on. For now though, let's just run this command:
 ```
 npm install @mui/material
 ```
@@ -93,7 +93,7 @@ api.add_route('/v1/products/{product_id:int}', Product())
 For UI pages in Next.js, the framework is even more opinionated: each file in the `pages/` that exports a React component automatically gets its own route. We discussed the special case of `pages/index.js` already, which is mapped to the root route `/`. New files will get pages that correspond to their name, and you can create folder structures to nest pages. For example:
 - `pages/about.js` will map to `/about`
 - `/pages/blog/posts.js` will map to `/blog/posts`
-- `/pages/blog/posts/[id].js` will create a dynamic route for `/blog/posts/{id}`. We won't be discussing dynamic Next.js routing today, but you can check out the docs for more information: https://nextjs.org/docs/routing/dynamic-routes
+- `/pages/blog/posts/[id].js` will create a dynamic route for `/blog/posts/{id}`. We won't be discussing dynamic Next.js routing today, but you can check out the docs for more information: https://nextjs.org/docs/app/api-reference/file-conventions/dynamic-routes
 
 Remember the products API you created? Let's create a page to browse products at the `/shop` route. We don't have any components to include yet, so for now we'll just add a title (`"My shop"`) and a link to another page, the cart page. The Next.js [Link component](https://nextjs.org/docs/13/app/api-reference/components/link) works a lot like an `<a>` tag, but with some framework magic sprinkled in.
 
@@ -137,16 +137,16 @@ Both `Container` and `Typography` are examples of reusable react components that
 Here's a couple candidates for re-use (via Material UI), but feel free to explore the docs to see the full list of generic components are available
 
 Card
-- https://material-ui.com/components/cards/
-- https://material-ui.com/api/card/
+- https://v5.mui.com/components/cards/
+- https://v5.mui.com/api/card/
 
 Typography
-- https://material-ui.com/components/typography/
-- https://material-ui.com/api/typography/
+- https://v5.mui.com/components/typography/
+- https://v5.mui.com/api/typography/
 
 Button
-- https://material-ui.com/components/buttons/
-- https://material-ui.com/api/buttons/
+- https://v5.mui.com/components/buttons/
+- https://v5.mui.com/api/buttons/
 
 ## Components
 
@@ -221,7 +221,7 @@ function ShoppingItemList() {
 ```
 
 
-Now that we got you started, the rest is up to you! Your next steps should be finishing up the CartItem and Cart components. Reach out to a bootcamp trainer or take a peek at a working solution [here](https://github.secureserver.net/txwilliams/bootcamp-shopping-cart/tree/solution).
+Now that we got you started, the rest is up to you! Your next steps should be finishing up the CartItem and Cart components. Reach out to a bootcamp trainer or take a peek at a working solution [here](https://github.com/txwilliams-godaddy/bootcamp-shopping-cart/tree/solution).
 
 ## Tips
 ### Async/await
