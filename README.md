@@ -70,7 +70,7 @@ npm install @mui/material
 ### Framework skeleton
 Alright, enough talk, let's look at some code. After creating a new Gasket app with the Next.js preset, we get a few key things:
 - Some config files that we'll ignore for now (`gasket.config.js`, `package.json`, `jest.config.js`)
-- The components directory, with one component: [`head.js`](./components/head.js) 
+- The components directory, with one component: [`head.js`](./components/head.js)
 - The pages directory, with 3 files:
   - [`_app.js`](./pages/_app.js)
   - [`_document.js`](./pages/_document.js)
@@ -95,7 +95,7 @@ For UI pages in Next.js, the framework is even more opinionated: each file in th
 - `/pages/blog/posts.js` will map to `/blog/posts`
 - `/pages/blog/posts/[id].js` will create a dynamic route for `/blog/posts/{id}`. We won't be discussing dynamic Next.js routing today, but you can check out the docs for more information: https://nextjs.org/docs/routing/dynamic-routes
 
-Remember the products API you created? Let's create a page to browse products at the `/shop` route. We don't have any components to include yet, so for now we'll just add a title (`"My shop"`) and a link to another page, the cart page. The Next.js [Link component](https://nextjs.org/learn/basics/navigate-between-pages/link-component) works a lot like an `<a>` tag, but with some framework magic sprinkled in.
+Remember the products API you created? Let's create a page to browse products at the `/shop` route. We don't have any components to include yet, so for now we'll just add a title (`"My shop"`) and a link to another page, the cart page. The Next.js [Link component](https://nextjs.org/docs/13/app/api-reference/components/link) works a lot like an `<a>` tag, but with some framework magic sprinkled in.
 
 Here's the full page code that you should add to `pages/shop.js`:
 
@@ -110,7 +110,7 @@ export const ShopPage = () => (
   <Container>
     <Head title='Home'/>
     <div>
-      <Typography variant="h3">My Shop</Typography>   
+      <Typography variant="h3">My Shop</Typography>
     </div>
     <div>
       <Link href="/cart">View cart</Link>
@@ -136,7 +136,7 @@ Ok, now that we have the basic pages setup lets circle back to back to Material 
 import { Container, Typography } from '@mui/material'
 ```
 
-Both `Container` and `Typography` are examples of reusable react components that the gracious and mysterious and opensource community have built. In react, reusability is core tenet and the main way we will encapsulate reusable frontend logic and HTML is via components. In fact, when building a large scale web-app, one of the first things you will need to identify is what components you will need to build, and which components you can reuse. 
+Both `Container` and `Typography` are examples of reusable react components that the gracious and mysterious and opensource community have built. In react, reusability is core tenet and the main way we will encapsulate reusable frontend logic and HTML is via components. In fact, when building a large scale web-app, one of the first things you will need to identify is what components you will need to build, and which components you can reuse.
 
 Here's a couple candidates for re-use (via Material UI), but feel free to explore the docs to see the full list of generic components are available
 
@@ -168,7 +168,7 @@ import React from 'react';
 import { Card, CardContent, CardActions } from '@mui/material'
 
 function ShopItem({ /* insert props here */}) {
-  
+
   const addToCart = () => {
      /* Insert logic here  */
   }
@@ -366,7 +366,7 @@ Now go forth and fetch!
 Gasket: https://github.com/godaddy/gasket
 - Gasket Plugins:  https://gasket.dev/#/README
 
-Training URLS: 
+Training URLS:
 - Pluralsight
   - React Track: https://www.pluralsight.com/browse/software-development/react
   - React Fundamentals: https://www.pluralsight.com/courses/react-fundamentals-update
