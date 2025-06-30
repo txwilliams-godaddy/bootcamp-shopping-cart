@@ -123,10 +123,6 @@ export default ShopPage;
 
 Check it out at `http://localhost:8080/shop`. You'll notice that clicking on the "View cart" link leads to an error page - let's fix that! Create a `cart.js` page similar to this one with a different title and a link back to the shop page.
 
-Further reading:
-- Next.js pages tutorial: https://nextjs.org/learn/basics/navigate-between-pages/pages-in-nextjs
-- Next.js pages docs: https://nextjs.org/docs/basic-features/pages
-
 ## Material UI
 
 Ok, now that we have the basic pages setup lets circle back to back to Material UI. You might have noticed a few lines of code in ShopPage that [import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) the "Container" and "Typography" components from Material UI
