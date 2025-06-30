@@ -5,7 +5,7 @@
 
 ## Preqrequities
 
-- NodeJS v20
+- NodeJS v20+
 - Visual Studio Code
 - Git
 
